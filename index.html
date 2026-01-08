@@ -8,1068 +8,1071 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="stylecss/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <title>AxionixFigma</title>
   </head>
-  <body class="max-w-[1440px]  mx-auto">
+  <body class="max-w-[1440px] mx-auto">
     <!-- HEADER STYLING -->
-<header class="header w-full bg-[#F8F7F4] min-h-[77px] flex items-center sticky top-0 z-50 ">
-  <nav class="max-w-[1440px] mx-auto w-full flex items-center justify-between px-6 py-4 lg:px-20">
-    
-    <div class="h-logo flex-shrink-0">
-      <img
-        src="./images/logo/logo.png"
-        alt="Workora Logo"
-        class="w-[126px] h-[18px] object-contain"
-      />
-    </div>
+    <header
+      class="header w-full bg-[#F8F7F4] min-h-[77px] flex items-center sticky top-0 z-50"
+    >
+      <nav
+        class="max-w-[1440px] mx-auto w-full flex items-center justify-between px-6 py-4 lg:px-20"
+      >
+        <div class="h-logo flex-shrink-0">
+          <img
+            src="./images/logo/logo.png"
+            alt="Workora Logo"
+            class="w-[126px] h-[18px] object-contain"
+          />
+        </div>
 
-    <div class="h-menu hidden lg:block">
-      <ul class="flex gap-[22px] text-[#6D6D72] font-semibold leading-[150%]">
-        <li>
-          <a href="#" class="pb-2 border-b-2 border-[#7C4DFF] text-[#7C4DFF] py-2 px-4 transition-all">Home</a>
-        </li>
-        <li>
-          <a href="#" class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all">Workspaces</a>
-        </li>
-        <li>
-          <a href="#" class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all">Membership</a>
-        </li>
-        <li>
-          <a href="#" class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all">Blog</a>
-        </li>
-        <li>
-          <a href="#" class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all">Favorites</a>
-        </li>
-      </ul>
-    </div>
+        <div class="h-menu hidden lg:block">
+          <ul
+            class="flex gap-[22px] text-[#6D6D72] font-semibold leading-[150%]"
+          >
+            <li>
+              <a
+                href="#"
+                class="pb-2 border-b-2 border-[#7C4DFF] text-[#7C4DFF] py-2 px-4 transition-all"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
+                >Workspaces</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
+                >Membership</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
+                >Favorites</a
+              >
+            </li>
+          </ul>
+        </div>
 
-    <div class="h-button hidden lg:flex items-center gap-4 flex-shrink-0">
-      <button class="cursor-pointer text-sm font-semibold rounded-[4px] bg-[#44169C] text-white py-2 px-6 border border-[#44169C] hover:bg-transparent hover:text-[#44169C] transition-all duration-300">
-        Contact Us
-      </button>
-      <button class="cursor-pointer text-sm font-semibold rounded-[4px] bg-[#44169C] text-white py-2 px-6 border border-[#44169C] hover:bg-transparent hover:text-[#44169C] transition-all duration-300">
-        LogIn
-      </button>
-    </div>
+        <div class="h-button hidden lg:flex items-center gap-4 flex-shrink-0">
+          <button
+            class="cursor-pointer text-sm font-semibold rounded-[4px] bg-[#44169C] text-white py-2 px-6 border border-[#44169C] hover:bg-transparent hover:text-[#44169C] transition-all duration-300"
+          >
+            Contact Us
+          </button>
+          <button
+            class="cursor-pointer text-sm font-semibold rounded-[4px] bg-[#44169C] text-white py-2 px-6 border border-[#44169C] hover:bg-transparent hover:text-[#44169C] transition-all duration-300"
+          >
+            LogIn
+          </button>
+        </div>
 
-    <button id="hamburger-btn" class="lg:hidden text-3xl text-[#44169C] cursor-pointer">
-      <i class='bx bx-menu'></i>
-    </button>
-  </nav>
-
-  <div id="mobile-drawer" class="hidden absolute top-[77px] left-0 w-full bg-[#F8F7F4]  lg:hidden flex flex-col p-6 gap-6 border-t border-gray-200">
-      <ul class="flex flex-col gap-2 text-[#6D6D72] font-semibold leading-[150%]">
-        <li><a href="#" class="text-[#7C4DFF] block">Home</a></li>
-        <li><a href="#" class="block">Workspaces</a></li>
-        <li><a href="#" class="block">Membership</a></li>
-        <li><a href="#" class="block">Blog</a></li>
-        <li><a href="#" class="block">Favorites</a></li>
-      </ul>
-      
-      <div class="flex flex-col gap-3 w-full box-border">
-        <button class="w-full border border-[#44169C] text-[#44169C] py-3 rounded-[4px] font-semibold text-sm">
-          Contact Us
+        <button
+          id="hamburger-btn"
+          class="lg:hidden text-3xl text-[#44169C] cursor-pointer"
+        >
+          <i class="bx bx-menu"></i>
         </button>
-        <button class="w-full bg-[#44169C] text-white py-3 rounded-[4px] font-semibold text-sm">
-          LogIn
-        </button>
+      </nav>
+
+      <div
+        id="mobile-drawer"
+        class="hidden absolute top-[77px] left-0 w-full bg-[#F8F7F4] lg:hidden flex flex-col p-6 gap-6 border-t border-gray-200"
+      >
+        <ul
+          class="flex flex-col gap-2 text-[#6D6D72] font-semibold leading-[150%]"
+        >
+          <li><a href="#" class="text-[#7C4DFF] block">Home</a></li>
+          <li><a href="#" class="block">Workspaces</a></li>
+          <li><a href="#" class="block">Membership</a></li>
+          <li><a href="#" class="block">Blog</a></li>
+          <li><a href="#" class="block">Favorites</a></li>
+        </ul>
+
+        <div class="flex flex-col gap-3 w-full box-border">
+          <button
+            class="w-full border border-[#44169C] text-[#44169C] py-3 rounded-[4px] font-semibold text-sm"
+          >
+            Contact Us
+          </button>
+          <button
+            class="w-full bg-[#44169C] text-white py-3 rounded-[4px] font-semibold text-sm"
+          >
+            LogIn
+          </button>
+        </div>
       </div>
-  </div>
-</header>
+    </header>
     <!-- MAIN -->
     <main>
       <!-- HERO-SECTION STYLING -->
-     <section id="hero-section" class="w-full py-20 px-6 lg:px-20 bg-white">
-  <div class="max-w-7xl mx-auto flex flex-col items-center gap-12">
-    
-    <div class="w-full flex justify-center">
-      <img
-        src="./images/main-images/WORKORA.png "
-        alt="WORKORA"
-        class="w-full max-w-[1280px] h-auto object-contain"
-      />
-    </div>
 
-    <div class="flex flex-col items-center gap-5 text-center">
-      <h1 class="font-bold text-[65px] leading-[110%] tracking-normal uppercase text-[#2A2734] font-heading">
-        Work Your Way at workora
-      </h1>
-      
-      <p class="font-normal text-[16px] leading-[150%] tracking-normal text-[#2A2734] font-body max-w-[500px]">
-        Flexible workspaces for freelancers, teams, and businesses designed for productivity, comfort, and community.
-      </p>
-    </div>
+      <section
+        id="hero-section"
+        class="w-full py-16 px-4 md:py-20 md:px-20 overflow-hidden"
+      >
+        <div
+          class="max-w-7xl mx-auto flex flex-col items-center gap-8 md:gap-12"
+        >
+          <div class="w-full flex justify-center">
+            <img
+              src="../images/main-images/WORKORA.png"
+              alt="WORKORA"
+              class="w-[80%] md:w-full max-w-[1280px] h-auto object-contain"
+            />
+          </div>
 
-    <div class="flex items-center gap-4">
-      <button class="cursor-pointer text-sm leading-[150%] font-semibold rounded-[4px] bg-[#44169C] text-white py-3 px-8 border border-[#44169C] hover:bg-transparent hover:text-[#44169C] transition-all duration-300">
-        Explore Spaces
-      </button>
-      
-      <button class="cursor-pointer text-sm leading-[150%] font-semibold rounded-[4px] bg-[#44169C] text-white py-3 px-8 border border-[#44169C] hover:bg-transparent hover:text-[#44169C] transition-all duration-300">
-        Book a Tour
-      </button>
-    </div>
+          <div
+            class="flex flex-col items-center gap-4 md:gap-5 text-center px-2"
+          >
+            <h1
+              class="font-bold text-[24px] md:text-[65px] leading-[115%] md:leading-[110%] tracking-tight md:tracking-normal uppercase text-[#2A2734]"
+            >
+              Work Your Way at workora
+            </h1>
+            <p
+              class="font-normal text-[14px] md:text-[16px] leading-[150%] text-[#2A2734] max-w-[340px] md:max-w-[500px]"
+            >
+              Flexible workspaces for freelancers, teams, and businesses
+              designed for productivity, comfort, and community.
+            </p>
+          </div>
 
-    <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-4">
-      <img
-        src="./images/main-images/Frame 1.png"
-        alt="Office space 1"
-        class="w-full h-[330px] object-cover rounded-sm"
-      />
-      <img
-        src="./images/main-images/Frame 2.png"
-        alt="Office space 2"
-        class="w-full h-[330px] object-cover rounded-sm"
-      />
-      <img
-        src="./images/main-images/Frame 3.png"
-        alt="Office space 3"
-        class="w-full h-[330px] object-cover rounded-sm"
-      />
-      <img
-        src="./images/main-images/Frame 4.png"
-        alt="Office space 4"
-        class="w-full h-[330px] object-cover rounded-sm"
-      />
-    </div>
-  </div>
-</section>
+          <div
+            class="flex flex-row items-center justify-center gap-3 md:gap-4 w-full px-2"
+          >
+            <button
+              class="flex-1 sm:flex-none cursor-pointer text-[13px] md:text-sm font-semibold rounded-[4px] bg-[#44169C] text-white py-3 px-4 md:px-10 border border-[#44169C] hover:bg-transparent hover:text-[#44169C] transition-all duration-300"
+            >
+              Explore Spaces
+            </button>
+            <button
+              class="flex-1 sm:flex-none cursor-pointer text-[13px] md:text-sm font-semibold rounded-[4px] bg-transparent text-[#44169C] py-3 px-4 md:px-10 border border-[#44169C] hover:bg-[#44169C] hover:text-white transition-all duration-300"
+            >
+              Book a Tour
+            </button>
+          </div>
+
+          <div class="relative w-full overflow-hidden mt-6 md:mt-8">
+            <div class="animate-hero-scroll flex gap-4">
+              <div class="flex gap-4 flex-shrink-0">
+                <img
+                  src="../images/main-images/Frame 1.png"
+                  class="w-[280px] md:w-[350px] h-[330px] object-cover rounded-[4px]"
+                  alt="1"
+                />
+                <img
+                  src="../images/main-images/Frame 2.png"
+                  class="w-[280px] md:w-[350px] h-[330px] object-cover rounded-[4px]"
+                  alt="2"
+                />
+                <img
+                  src="../images/main-images/Frame 3.png"
+                  class="w-[280px] md:w-[350px] h-[330px] object-cover rounded-[4px]"
+                  alt="3"
+                />
+                <img
+                  src="../images/main-images/Frame 4.png"
+                  class="w-[280px] md:w-[350px] h-[330px] object-cover rounded-[4px]"
+                  alt="4"
+                />
+              </div>
+
+              <div class="flex gap-4 flex-shrink-0">
+                <img
+                  src="../images/main-images/Frame 1.png"
+                  class="w-[280px] md:w-[350px] h-[330px] object-cover rounded-[4px]"
+                  alt="1"
+                />
+                <img
+                  src="../images/main-images/Frame 2.png"
+                  class="w-[280px] md:w-[350px] h-[330px] object-cover rounded-[4px]"
+                  alt="2"
+                />
+                <img
+                  src="../images/main-images/Frame 3.png"
+                  class="w-[280px] md:w-[350px] h-[330px] object-cover rounded-[4px]"
+                  alt="3"
+                />
+                <img
+                  src="../images/main-images/Frame 4.png"
+                  class="w-[280px] md:w-[350px] h-[330px] object-cover rounded-[4px]"
+                  alt="4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- EXPERINCE SECTION -->
 
-<section class="EXPERINCE-SECTION w-full bg-[#7C4DFF] py-20 px-6 md:px-12 lg:px-24">
-  <div class="max-w-[1280px] mx-auto flex flex-col items-center gap-12">
-    
-    <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-5">
-      <div class="flex flex-col gap-2">
-        <h2 class="font-bold text-[48px] leading-[120%] tracking-normal text-[#FFF7D1] uppercase font-heading">
-          More Than Just a Desk
-        </h2>
-        <h3 class="font-bold text-[32px] leading-[120%] tracking-normal font-heading text-white">
-          It’s How You Work Best
-        </h3>
-      </div>
-      <div class="flex items-start lg:justify-end">
-        <p class="font-normal text-[16px] leading-[150%] tracking-normal font-body text-white lg:max-w-[630px]">
-          Workora gives you the freedom, comfort, and tools to work your way whether you’re flying solo, leading a team, or building the next big thing.
-        </p>
-      </div>
-    </div>
-
-    <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
-      
-      <div class="w-full">
-        <img
-          src="images/main-images/Frame 5.png"
-          alt="Working at Workora"
-          class="w-full h-full min-h-[680px] object-cover rounded-[8px]"
-        />
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-        
-        <div class="flex flex-col gap-5 rounded-[8px] py-[40px] px-[20px] justify-center items-center border border-white/30 bg-white/5 text-white">
-          <i class='bx bx-chair text-4xl'></i>
-          <h4 class="font-semibold text-[24px] leading-[120%] text-center font-heading">
-            Flexible Workspaces
-          </h4>
-          <p class="font-normal text-[16px] leading-[150%] text-center font-body opacity-90">
-            Choose what suits your rhythm from hot desks to private offices and meeting rooms. Pay for what you need, when you need it.
-          </p>
-        </div>
-
-        <div class="flex flex-col gap-5 rounded-[8px] py-[40px] px-[20px] justify-center items-center border border-white/30 bg-white/5 text-white">
-          <i class='bx bx-wifi text-4xl'></i>
-          <h4 class="font-semibold text-[24px] leading-[120%] text-center font-heading">
-            Amenities That Keep You Going
-          </h4>
-          <p class="font-normal text-[16px] leading-[150%] text-center font-body opacity-90">
-            Enjoy high-speed Wi-Fi, premium coffee, lockers, printers, lounges, and everything else to stay productive and relaxed.
-          </p>
-        </div>
-
-        <div class="flex flex-col gap-5 rounded-[8px] py-[40px] px-[20px] justify-center items-center border border-white/30 bg-white/5 text-white">
-          <i class='bx bx-group text-4xl'></i>
-          <h4 class="font-semibold text-[24px] leading-[120%] text-center font-heading">
-            Creative Community
-          </h4>
-          <p class="font-normal text-[16px] leading-[150%] text-center font-body opacity-90">
-            Surround yourself with freelancers, startups, and teams who are building, sharing, and growing just like you.
-          </p>
-        </div>
-
-        <div class="flex flex-col gap-5 rounded-[8px] py-[40px] px-[20px] justify-center items-center border border-white/30 bg-white/5 text-white">
-          <i class='bx bx-calendar-event text-4xl'></i>
-          <h4 class="font-semibold text-[24px] leading-[120%] text-center font-heading">
-            Events, Workshops & More
-          </h4>
-          <p class="font-normal text-[16px] leading-[150%] text-center font-body opacity-90">
-            Stay inspired with regular community events, expert-led talks, networking nights, and productivity sessions.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-      <!-- WORKSPACE SECTION -->
-      <section id="workspace-section max-w-[1280px] bg-[#F8F7F4]">
-        <div class="work-mainContainer px-20 py-20 bg-[#F8F7F4]">
-          <div class="work-container1 flex flex-row gap-5">
-            <!-- wrok-content -->
-            <div
-              class="wrok-content flex justify-center flex-col gap-2 pr-[333px]"
-            >
+      <section
+        class="EXPERINCE-SECTION w-full bg-[#7C4DFF] py-16 px-6 md:py-20 md:px-12 lg:px-24"
+      >
+        <div
+          class="max-w-[1280px] mx-auto flex flex-col items-center gap-10 md:gap-12"
+        >
+          <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="flex flex-col gap-2">
+              <h2
+                class="font-bold text-[32px] md:text-[48px] leading-[110%] md:leading-[120%] tracking-normal text-[#FFF7D1] uppercase font-heading"
+              >
+                More Than Just a Desk
+              </h2>
               <h3
-                class="font-heading text-[48px] text-[#7C4DFF] font-bold uppercase leading-[120%] tracking-normal"
+                class="font-bold text-[24px] md:text-[32px] leading-[110%] md:leading-[120%] tracking-normal font-heading text-white"
+              >
+                It’s How You Work Best
+              </h3>
+            </div>
+            <div class="flex items-start lg:justify-end">
+              <p
+                class="font-normal text-[15px] md:text-[16px] leading-[150%] tracking-normal font-body text-white lg:max-w-[630px] opacity-90"
+              >
+                Workora gives you the freedom, comfort, and tools to work your
+                way whether you’re flying solo, leading a team, or building the
+                next big thing.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch"
+          >
+            <div class="w-full group overflow-hidden rounded-[8px]">
+              <img
+                src="images/main-images/Frame 5.png"
+                alt="Working at Workora"
+                class="w-full h-full min-h-[400px] md:min-h-[680px] object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div
+                class="flex flex-col gap-4 rounded-[8px] py-[35px] px-[20px] justify-center items-center border border-white/20 bg-white/10 text-white transition-all duration-300 hover:-translate-y-2 hover:bg-white/15 hover:border-white/40 cursor-default"
+              >
+                <i class="bx bx-chair text-4xl text-[#FFF7D1]"></i>
+                <h4
+                  class="font-semibold text-[20px] md:text-[24px] leading-[120%] text-center font-heading"
+                >
+                  Flexible Workspaces
+                </h4>
+                <p
+                  class="font-normal text-[14px] md:text-[16px] leading-[150%] text-center font-body opacity-80"
+                >
+                  Choose what suits your rhythm from hot desks to private
+                  offices and meeting rooms. Pay for what you need.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col gap-4 rounded-[8px] py-[35px] px-[20px] justify-center items-center border border-white/20 bg-white/10 text-white transition-all duration-300 hover:-translate-y-2 hover:bg-white/15 hover:border-white/40 cursor-default"
+              >
+                <i class="bx bx-wifi text-4xl text-[#FFF7D1]"></i>
+                <h4
+                  class="font-semibold text-[20px] md:text-[24px] leading-[120%] text-center font-heading"
+                >
+                  Amenities
+                </h4>
+                <p
+                  class="font-normal text-[14px] md:text-[16px] leading-[150%] text-center font-body opacity-80"
+                >
+                  Enjoy high-speed Wi-Fi, premium coffee, lockers, printers, and
+                  everything else to stay productive.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col gap-4 rounded-[8px] py-[35px] px-[20px] justify-center items-center border border-white/20 bg-white/10 text-white transition-all duration-300 hover:-translate-y-2 hover:bg-white/15 hover:border-white/40 cursor-default"
+              >
+                <i class="bx bx-group text-4xl text-[#FFF7D1]"></i>
+                <h4
+                  class="font-semibold text-[20px] md:text-[24px] leading-[120%] text-center font-heading"
+                >
+                  Creative Community
+                </h4>
+                <p
+                  class="font-normal text-[14px] md:text-[16px] leading-[150%] text-center font-body opacity-80"
+                >
+                  Surround yourself with freelancers, startups, and teams who
+                  are building and growing just like you.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col gap-4 rounded-[8px] py-[35px] px-[20px] justify-center items-center border border-white/20 bg-white/10 text-white transition-all duration-300 hover:-translate-y-2 hover:bg-white/15 hover:border-white/40 cursor-default"
+              >
+                <i class="bx bx-calendar-event text-4xl text-[#FFF7D1]"></i>
+                <h4
+                  class="font-semibold text-[20px] md:text-[24px] leading-[120%] text-center font-heading"
+                >
+                  Events & Workshops
+                </h4>
+                <p
+                  class="font-normal text-[14px] md:text-[16px] leading-[150%] text-center font-body opacity-80"
+                >
+                  Stay inspired with regular community events, expert-led talks,
+                  and productivity sessions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- WORKSPACE SECTION -->
+      <section id="workspace-section" class="w-full bg-[#F8F7F4]">
+        <div
+          class="work-mainContainer px-6 py-12 lg:px-20 lg:py-20 max-w-[1440px] mx-auto"
+        >
+          <div
+            class="work-container1 flex flex-col lg:flex-row justify-between items-center text-center lg:text-left gap-4"
+          >
+            <div class="work-content flex flex-col gap-2 max-w-2xl">
+              <h3
+                class="font-heading text-3xl lg:text-[44px] text-[#7C4DFF] font-bold uppercase leading-tight"
               >
                 Spaces That Work for You
               </h3>
               <p
-                class="font-body text-[16px] font-normal leading-[150%] tracking-normal"
+                class="font-body text-[15px] lg:text-[16px] font-normal text-gray-600"
               >
                 Whether you're flying solo or bringing your team, we have the
                 space to match your energy.
               </p>
             </div>
-            <!-- wrok-btn -->
-            <div class="wrok-btn">
-              <button
-                class="cursor-pointer text-sm leading-[150%] tracking-normal font-semibold rounded-[4px] bg-[#44169C] text-white py-2 px-4 border border-transparent hover:bg-transparent hover:text-[#44169C] transition-all duration-500 hover:border-[#44169C]"
-              >
-                View All Spaces
-              </button>
-            </div>
           </div>
-          <!-- cards -->
-          <div class="work-container2 mt-12 flex flex-row gap-5">
-            <!-- card1 -->
-            <div class="card1 w-[413px] px-5 py-5 bg-[#FFFFFF] rounded-[8px]">
-              <div class="img">
-                <img src="./images/main-images/Frame 6.png" alt="" />
+
+          <div class="work-container2 mt-12 flex flex-col lg:flex-row gap-6">
+            <div class="card bg-white p-5 rounded-[12px] shadow-sm flex-1">
+              <div class="rounded-lg overflow-hidden h-52 lg:h-60">
+                <img
+                  src="./images/main-images/Frame 6.png"
+                  alt="Shared Desk"
+                  class="w-full h-full object-cover"
+                />
               </div>
-              <div class="content-work mt-[9.5px]">
-                <div class="dil flex justify-between">
+              <div class="mt-5">
+                <div class="flex justify-between items-center">
                   <h4
-                    class="font-heading text-[24px] text-[#2A2734] font-semibold leading-[120%] tracking-normal"
+                    class="text-[22px] lg:text-[24px] text-[#2A2734] font-semibold"
                   >
                     Shared Desk
                   </h4>
-                  <img src="./images/icons/dil-icon.svg" alt="" />
+                  <img
+                    src="./images/icons/dil-icon.svg"
+                    alt="heart"
+                    class="w-6 h-6"
+                  />
                 </div>
-                <div class="order mt-[20px] flex flex-wrap gap-[9px]">
+                <div class="mt-4 flex flex-wrap gap-2 min-h-[70px]">
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
-                  >
-                    10 pages Printing</span
-                  >
-                  <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
-                  >
-                    1 Coffee</span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >10 pages Printing</span
                   >
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
-                  >
-                    1 Bottle of Water</span
-                  >
-                  <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
-                  >
-                    Shared Space</span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >1 Coffee</span
                   >
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
-                  >
-                    Shared Desk</span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >1 Bottle of Water</span
                   >
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >Shared Space</span
                   >
-                    Free Wifi</span
+                  <span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >Shared Desk</span
+                  >
+                  <span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >Free Wifi</span
                   >
                 </div>
-                <!-- step3 -->
-                <div class="dolloar mt-12 flex justify-between items-center">
-                  <div class="ETB1">
-                    <div class="main-icon flex items-center gap-2">
-                      <img src="./images/icons/dolar-icon.svg" alt="" />
-                      <span
-                        class="font-heading font-semibold text-[24px] leading-[120%] tracking-normal text-[#7C4DFF]"
+                <div class="mt-8 flex justify-between items-center">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        src="./images/icons/dolar-icon.svg"
+                        alt=""
+                        class="w-6"
+                      />
+                      <span class="text-2xl font-bold text-[#7C4DFF]"
                         >ETB 500</span
                       >
                     </div>
-                    <div class="etbspan">
-                      <span
-                        class="font-body font-normal text-[14px] leading-[150%] tracking-normal text-[#6D6D72]"
-                        >Daily</span
-                      >
-                    </div>
+                    <p class="text-xs text-gray-400 mt-1">Daily</p>
                   </div>
-                  <div class="ETB2">
-                    <button
-                      class="cursor-pointer text-sm leading-[150%] tracking-normal font-semibold rounded-[4px] bg-[#44169C] text-white py-[9.5px] px-4 border border-transparent hover:bg-transparent hover:text-[#44169C] transition-all duration-500 hover:border-[#44169C] flex gap-2"
-                    >
-                      Book Nows
-                      <img src="./images/icons/arrow-iocn.svg" alt="" />
-                    </button>
-                  </div>
+                  <button
+                    class="flex items-center gap-2 text-sm font-semibold rounded-[6px] bg-[#44169C] text-white py-2.5 px-5 hover:opacity-90 transition-all"
+                  >
+                    Book Now
+                    <img
+                      src="./images/icons/arrow-iocn.svg"
+                      alt=""
+                      class="w-4"
+                    />
+                  </button>
                 </div>
               </div>
             </div>
-            <!-- card2 -->
-            <div class="card2 w-[413px] px-5 py-5 bg-[#FFFFFF] rounded-[8px]">
-              <div class="img">
-                <img src="./images/main-images/Frame 6.png" alt="" />
+
+            <div class="card bg-white p-5 rounded-[12px] shadow-sm flex-1">
+              <div class="rounded-lg overflow-hidden h-52 lg:h-60">
+                <img
+                  src="./images/main-images/Frame 7.png"
+                  alt="Private Office"
+                  class="w-full h-full object-cover"
+                />
               </div>
-              <div class="content-work mt-[9.5px]">
-                <div class="dil flex justify-between">
+              <div class="mt-5">
+                <div class="flex justify-between items-center">
                   <h4
-                    class="font-heading text-[24px] text-[#2A2734] font-semibold leading-[120%] tracking-normal"
+                    class="text-[22px] lg:text-[24px] text-[#2A2734] font-semibold"
                   >
                     Private Office
                   </h4>
-                  <img src="./images/icons/dil-icon.svg" alt="" />
+                  <img
+                    src="./images/icons/dil-icon.svg"
+                    alt="heart"
+                    class="w-6 h-6"
+                  />
                 </div>
-                <div class="order mt-[20px] flex flex-wrap gap-[9px]">
+                <div class="mt-4 flex flex-wrap gap-2 min-h-[70px]">
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF] text-[#2A2734]"
-                  >
-                    Unlimited Printing</span
-                  >
-                  <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF] text-[#2A2734]"
-                  >
-                    1 Coffee</span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >Unlimited Printing</span
                   >
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF] text-[#2A2734]"
-                  >
-                    Open Desk Access</span
-                  >
-                  <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF] text-[#2A2734]"
-                  >
-                    Fully Furnished Office</span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >1 Coffee</span
                   >
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF] text-[#2A2734]"
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >Open Desk Access</span
                   >
-                    Free Wifi</span
+                  <span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >Fully Furnished Office</span
+                  >
+                  <span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >Free Wifi</span
                   >
                 </div>
-                <!-- step3 -->
-                <div class="dolloar mt-12 flex justify-between items-center">
-                  <div class="ETB1">
-                    <div class="main-icon flex items-center gap-2">
-                      <img src="./images/icons/dolar-icon.svg" alt="" />
-                      <span
-                        class="font-heading font-semibold text-[24px] leading-[120%] tracking-normal text-[#7C4DFF]"
-                        >ETB 500</span
+                <div class="mt-8 flex justify-between items-center">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        src="./images/icons/dolar-icon.svg"
+                        alt=""
+                        class="w-6"
+                      />
+                      <span class="text-2xl font-bold text-[#7C4DFF]"
+                        >ETB 1,000</span
                       >
                     </div>
-                    <div class="etbspan">
-                      <span
-                        class="font-body font-normal text-[14px] leading-[150%] tracking-normal text-[#6D6D72]"
-                        >Daily</span
-                      >
-                    </div>
+                    <p class="text-xs text-gray-400 mt-1">Daily</p>
                   </div>
-                  <div class="ETB2">
-                    <button
-                      class="cursor-pointer text-sm leading-[150%] tracking-normal font-semibold rounded-[4px] bg-[#44169C] text-white py-[9.5px] px-4 border border-transparent hover:bg-transparent hover:text-[#44169C] transition-all duration-500 hover:border-[#44169C] flex gap-2"
-                    >
-                      Book Nows
-                      <img src="./images/icons/arrow-iocn.svg" alt="" />
-                    </button>
-                  </div>
+                  <button
+                    class="flex items-center gap-2 text-sm font-semibold rounded-[6px] bg-[#44169C] text-white py-2.5 px-5 hover:opacity-90 transition-all"
+                  >
+                    Book Now
+                    <img
+                      src="./images/icons/arrow-iocn.svg"
+                      alt=""
+                      class="w-4"
+                    />
+                  </button>
                 </div>
               </div>
             </div>
-            <!-- card3 -->
-            <div class="card1 w-[413px] px-5 py-5 bg-[#FFFFFF] rounded-[8px]">
-              <div class="img">
-                <img src="./images/main-images/Frame 6.png" alt="" />
+
+            <div class="card bg-white p-5 rounded-[12px] shadow-sm flex-1">
+              <div class="rounded-lg overflow-hidden h-52 lg:h-60">
+                <img
+                  src="./images/main-images/Frame 8.png"
+                  alt="Dedicated Desk"
+                  class="w-full h-full object-cover"
+                />
               </div>
-              <div class="content-work mt-[9.5px]">
-                <div class="dil flex justify-between">
+              <div class="mt-5">
+                <div class="flex justify-between items-center">
                   <h4
-                    class="font-heading text-[24px] text-[#2A2734] font-semibold leading-[120%] tracking-normal"
+                    class="text-[22px] lg:text-[24px] text-[#2A2734] font-semibold"
                   >
                     Dedicated Desk
                   </h4>
-                  <img src="./images/icons/dil-icon.svg" alt="" />
+                  <img
+                    src="./images/icons/dil-icon.svg"
+                    alt="heart"
+                    class="w-6 h-6"
+                  />
                 </div>
-                <div class="order mt-[20px] flex flex-wrap gap-[10px]">
+                <div class="mt-4 flex flex-wrap gap-2 min-h-[70px]">
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
-                  >
-                    10 pages Printing</span
-                  >
-                  <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
-                  >
-                    1 Coffee</span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >10 pages Printing</span
                   >
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
-                  >
-                    1 Bottle of Water</span
-                  >
-                  <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
-                  >
-                    Dedicated Desk Access</span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >1 Coffee</span
                   >
                   <span
-                    class="font-normal text-[14px] leading-[150%] rounded-[4px] px-2 tracking-normal bg-[#EBE8FF]"
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >1 Bottle of Water</span
                   >
-                    Free Wifi</span
+                  <span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >Dedicated Desk Access</span
+                  >
+                  <span
+                    class="text-[13px] rounded-[4px] px-3 py-1 bg-[#EBE8FF] text-[#2A2734]"
+                    >Free Wifi</span
                   >
                 </div>
-                <!-- step3 -->
-                <div class="dolloar mt-12 flex justify-between items-center">
-                  <div class="ETB1">
-                    <div class="main-icon flex items-center gap-2">
-                      <img src="./images/icons/dolar-icon.svg" alt="" />
-                      <span
-                        class="font-heading font-semibold text-[24px] leading-[120%] tracking-normal text-[#7C4DFF]"
-                        >ETB 500</span
+                <div class="mt-8 flex justify-between items-center">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <img
+                        src="./images/icons/dolar-icon.svg"
+                        alt=""
+                        class="w-6"
+                      />
+                      <span class="text-2xl font-bold text-[#7C4DFF]"
+                        >ETB 800</span
                       >
                     </div>
-                    <div class="etbspan">
-                      <span
-                        class="font-body font-normal text-[14px] leading-[150%] tracking-normal text-[#6D6D72]"
-                        >Daily</span
-                      >
-                    </div>
+                    <p class="text-xs text-gray-400 mt-1">Daily</p>
                   </div>
-                  <div class="ETB2">
-                    <button
-                      class="cursor-pointer text-sm leading-[150%] tracking-normal font-semibold rounded-[4px] bg-[#44169C] text-white py-[9.5px] px-4 border border-transparent hover:bg-transparent hover:text-[#44169C] transition-all duration-500 hover:border-[#44169C] flex gap-2"
-                    >
-                      Book Nows
-                      <img src="./images/icons/arrow-iocn.svg" alt="" />
-                    </button>
-                  </div>
+                  <button
+                    class="flex items-center gap-2 text-sm font-semibold rounded-[6px] bg-[#44169C] text-white py-2.5 px-5 hover:opacity-90 transition-all"
+                  >
+                    Book Now
+                    <img
+                      src="./images/icons/arrow-iocn.svg"
+                      alt=""
+                      class="w-4"
+                    />
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="mt-16 flex justify-center">
+            <button
+              class="px-8 py-3 rounded-[8px] border-2 border-[#44169C] text-[#44169C] font-bold text-sm hover:bg-[#44169C] hover:text-white transition-all duration-300"
+            >
+              View All Spaces
+            </button>
           </div>
         </div>
       </section>
 
       <!-- Membership-section -->
-      <section id="Membership bg-white">
-        <div
-          class="mem-container py-20 px-20 flex flex-col gap-12 bg-white max-w-[1440px]"
-        >
-          <div class="member1 flex flex-col items-center gap-2">
-            <h2
-              class="font-heading font-bold text-[48px] leading-[120%] tracking-normal text-center uppercase text-[#7C4DFF] uppercase"
-            >
-              Membership
-            </h2>
-            <h3
-              class="font-heading font-bold text-[32px] leading-[120%] tracking-normal text-center text-[#2A2734]"
-            >
-              Join theWorkora Community
-            </h3>
-            <p
-              class="font-body font-normal text-[16px] leading-[150%] tracking-normal text-center text-[#2A2734] w-[846px] mt-[12px]"
-            >
-              At Workora, we believe one size doesn’t fit all. That’s why our
-              memberships are designed for flexibility whether you're just
-              getting started or leading a growing team. Enjoy full access to
-              our spaces, community events, and premium amenities tailored to
-              your work style.
-            </p>
+    <section id="Membership" class="bg-white">
+  <div class="mem-container py-12 px-5 lg:py-20 lg:px-20 flex flex-col gap-10 bg-white max-w-[1440px] mx-auto">
+    
+    <div class="member1 flex flex-col items-center gap-3 text-center">
+      <h2 class="font-heading font-bold text-3xl lg:text-[48px] text-[#7C4DFF] uppercase tracking-wide">
+        Membership
+      </h2>
+      <h3 class="font-heading font-bold text-2xl lg:text-[32px] text-[#2A2734]">
+        Join the Deskora Community
+      </h3>
+      <p class="font-body text-[15px] lg:text-[16px] text-gray-600 max-w-[800px] mt-2 leading-relaxed">
+        At Deskora, we believe one size doesn’t fit all. That’s why our memberships are designed for flexibility whether you're just getting started or leading a growing team.
+      </p>
+    </div>
+
+    <div class="member2 flex flex-col lg:flex-row gap-6 justify-center">
+      
+      <div class="group cursor-pointer bg-[#F8F7F4] hover:bg-[#7C4DFF] p-8 rounded-[12px] flex flex-col transition-all duration-300 w-full lg:w-1/3 shadow-sm hover:shadow-xl">
+        <h3 class="text-[28px] font-bold text-[#7C4DFF] group-hover:text-white transition-colors">Gold</h3>
+        <h4 class="text-[22px] font-semibold text-[#2A2734] mt-4 group-hover:text-white transition-colors">ETB 20,000 / month</h4>
+        
+        <div class="flex flex-col gap-4 mt-8 flex-grow">
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Private Office Access</span>
           </div>
-          <div class="member2 flex flex-row gap-5 justify-center">
-            <!-- member-card1 -->
-            <div
-              class="memr-card1 bg-[#F8F7F4] flex flex-col w-[413px] p-8 rounded-[8px]"
-            >
-              <div class="flex flex-col gap-12">
-                <h3
-                  class="font-heading font-bold text-[32px] leading-[120%] tracking-normal text-[#7C4DFF]"
-                >
-                  GOLD
-                </h3>
-                <h4
-                  class="font-heading font-semibold text-[24px] leading-[120%] tracking-normal text-[#2A2734] uppercase"
-                >
-                  ETB 20,000 / month
-                </h4>
-                <div class="spans flex flex-col gap-4">
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                </div>
-                <button
-                  class="cursor-pointer text-sm leading-[150%] tracking-normal font-semibold rounded-[4px] bg-[#44169C] text-white py-2 px-4 border border-transparent hover:bg-transparent hover:text-[#44169C] transition-all duration-500 hover:border-[#44169C]"
-                >
-                  Book Now
-                </button>
-              </div>
-            </div>
-            <!-- member-card2 -->
-            <div
-              class="memr-card1 bg-[#F8F7F4] flex flex-col w-[413px] p-8 rounded-[8px]"
-            >
-              <div class="flex flex-col gap-12">
-                <h3
-                  class="font-heading font-bold text-[32px] leading-[120%] tracking-normal text-[#7C4DFF]"
-                >
-                  GOLD
-                </h3>
-                <h4
-                  class="font-heading font-semibold text-[24px] leading-[120%] tracking-normal text-[#2A2734] uppercase"
-                >
-                  ETB 20,000 / month
-                </h4>
-                <div class="spans flex flex-col gap-4">
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                </div>
-                <button
-                  class="cursor-pointer text-sm leading-[150%] tracking-normal font-semibold rounded-[4px] bg-[#44169C] text-white py-2 px-4 border border-transparent hover:bg-transparent hover:text-[#44169C] transition-all duration-500 hover:border-[#44169C]"
-                >
-                  Book Now
-                </button>
-              </div>
-            </div>
-            <!-- member-card3 -->
-            <div
-              class="memr-card1 bg-[#F8F7F4] flex flex-col w-[413px] p-8 rounded-[8px]"
-            >
-              <div class="flex flex-col gap-12">
-                <h3
-                  class="font-heading font-bold text-[32px] leading-[120%] tracking-normal text-[#7C4DFF]"
-                >
-                  GOLD
-                </h3>
-                <h4
-                  class="font-heading font-semibold text-[24px] leading-[120%] tracking-normal text-[#2A2734] uppercase"
-                >
-                  ETB 20,000 / month
-                </h4>
-                <div class="spans flex flex-col gap-4">
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                  <span
-                    class="font-body font-normal text-[18px] leading-[150%] tracking-normal text-[#2A2734]"
-                    ><i class="bx bx-check"></i> Private Office Access</span
-                  >
-                </div>
-                <button
-                  class="cursor-pointer text-sm leading-[150%] tracking-normal font-semibold rounded-[4px] bg-[#44169C] text-white py-2 px-4 border border-transparent hover:bg-transparent hover:text-[#44169C] transition-all duration-500 hover:border-[#44169C]"
-                >
-                  Book Now
-                </button>
-              </div>
-            </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">60 Hours Meeting Room Hours</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">2 Coffee & Water/day</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Printing (Unlimited)</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Locker & Storage</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Free Event Access</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">High-Speed Wi-Fi</span>
           </div>
         </div>
-      </section>
+
+        <button class="mt-10 w-full py-3 rounded-[6px] font-bold bg-[#44169C] text-white group-hover:bg-white group-hover:text-[#44169C] transition-all duration-300">
+          Book Now
+        </button>
+      </div>
+
+      <div class="group relative cursor-pointer bg-[#F8F7F4] hover:bg-[#7C4DFF] p-8 rounded-[12px] flex flex-col transition-all duration-300 w-full lg:w-1/3 shadow-sm hover:shadow-xl">
+        <span class="absolute top-4 right-4 bg-[#7C4DFF] text-white text-[11px] font-bold px-3 py-1 rounded-full group-hover:bg-white group-hover:text-[#7C4DFF]">Most Popular</span>
+        
+        <h3 class="text-[28px] font-bold text-[#7C4DFF] group-hover:text-white transition-colors">Silver</h3>
+        <h4 class="text-[22px] font-semibold text-[#2A2734] mt-4 group-hover:text-white transition-colors">ETB 8,500 / month</h4>
+        
+        <div class="flex flex-col gap-4 mt-8 flex-grow">
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Dedicated Desk</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">20 Hours Meeting Access</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">2 Coffees & Water /day</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Printing (50 pages)</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Locker & Storage</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">50% Off Events</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">High-Speed Wi-Fi</span>
+          </div>
+        </div>
+
+        <button class="mt-10 w-full py-3 rounded-[6px] font-bold bg-[#44169C] text-white group-hover:bg-white group-hover:text-[#44169C] transition-all duration-300">
+          Book Now
+        </button>
+      </div>
+
+      <div class="group cursor-pointer bg-[#F8F7F4] hover:bg-[#7C4DFF] p-8 rounded-[12px] flex flex-col transition-all duration-300 w-full lg:w-1/3 shadow-sm hover:shadow-xl">
+        <h3 class="text-[28px] font-bold text-[#7C4DFF] group-hover:text-white transition-colors">Bronze</h3>
+        <h4 class="text-[22px] font-semibold text-[#2A2734] mt-4 group-hover:text-white transition-colors">ETB 7,000 / month</h4>
+        
+        <div class="flex flex-col gap-4 mt-8 flex-grow">
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Shared Desk Access</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Bookable Meeting Rooms</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">1 Coffee & Water/day</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Printing (10 pages)</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">Locker & Storage</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">10% Off Events</span>
+          </div>
+          <div class="flex items-center gap-3 text-[#2A2734] group-hover:text-white transition-colors">
+            <i class="bx bx-check text-xl"></i> <span class="text-[15px] lg:text-[16px]">High-Speed Wi-Fi</span>
+          </div>
+        </div>
+
+        <button class="mt-10 w-full py-3 rounded-[6px] font-bold bg-[#44169C] text-white group-hover:bg-white group-hover:text-[#44169C] transition-all duration-300">
+          Book Now
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <!-- Perks -section  -->
-      <section>
-        <div class="perks-container bg-[#F8F7F4]">
-          <div class="p-cont1 py-20 px-20 flex flex-col gap-12 max-w-[1440px]">
-            <div class="main-perks1 flex flex-col items-center gap-2">
-              <h2
-                class="font-heading font-bold text-[48px] leading-[120%] tracking-normal text-center uppercase text-[#7C4DFF] uppercase"
-              >
-                Perks You’ll Enjoy
-              </h2>
-              <h3
-                class="font-heading font-bold text-[32px] leading-[120%] tracking-normal text-center text-[#2A2734]"
-              >
-                Everything You Need, Already Included
-              </h3>
-              <p
-                class="font-body font-normal text-[16px] leading-[150%] tracking-normal text-center text-[#2A2734] w-[846px] mt-[12px]"
-              >
-                At Deskora, we’ve taken care of the little things so you can
-                focus on the big ideas. From productivity tools to daily
-                comforts, our workspaces come fully equipped to support your
-                best work, every day.
-              </p>
-            </div>
-          </div>
-          <div class="p-cont1">
-            <div class="cards p-20 grid grid-cols-5 gap-4">
-              <div
-                class="card1 bg-white flex items-center py-[34px] flex-col gap-[32px] max-w-[220px] rounded-[8px]"
-              >
-                <div class="p-4 bg-[#D9D4FF] rounded-[10px]">
-                  <img
-                    src="./images/icons/wiffi.svg"
-                    alt=""
-                    class="max-w-[40px]"
-                  />
-                </div>
-                <div
-                  class="spns flex flex-col items-center font-heading font-semibold text-[24px] leading-[120%] tracking-[0%] text-center"
-                >
-                  <span>High-Speed </span>
-                  <span>Wi-Fi</span>
-                </div>
-              </div>
-              <div
-                class="card2 bg-white flex items-center py-[34px] flex-col gap-[32px] max-w-[220px] rounded-[8px]"
-              >
-                <div class="p-4 bg-[#D9D4FF] rounded-[10px]">
-                  <img
-                    src="./images/icons/wiffi.svg"
-                    alt=""
-                    class="max-w-[40px]"
-                  />
-                </div>
-                <div
-                  class="spns flex flex-col items-center font-heading font-semibold text-[24px] leading-[120%] tracking-[0%] text-center"
-                >
-                  <span>High-Speed </span>
-                  <span>Wi-Fi</span>
-                </div>
-              </div>
-              <div
-                class="card3 bg-white flex items-center py-[34px] flex-col gap-[32px] max-w-[220px] rounded-[8px]"
-              >
-                <div class="p-4 bg-[#D9D4FF] rounded-[10px]">
-                  <img
-                    src="./images/icons/wiffi.svg"
-                    alt=""
-                    class="max-w-[40px]"
-                  />
-                </div>
-                <div
-                  class="spns flex flex-col items-center font-heading font-semibold text-[24px] leading-[120%] tracking-[0%] text-center"
-                >
-                  <span>High-Speed </span>
-                  <span>Wi-Fi</span>
-                </div>
-              </div>
-              <div
-                class="card4 bg-white flex items-center py-[34px] flex-col gap-[32px] max-w-[220px] rounded-[8px]"
-              >
-                <div class="p-4 bg-[#D9D4FF] rounded-[10px]">
-                  <img
-                    src="./images/icons/wiffi.svg"
-                    alt=""
-                    class="max-w-[40px]"
-                  />
-                </div>
-                <div
-                  class="spns flex flex-col items-center font-heading font-semibold text-[24px] leading-[120%] tracking-[0%] text-center"
-                >
-                  <span>High-Speed </span>
-                  <span>Wi-Fi</span>
-                </div>
-              </div>
-              <div
-                class="card5 bg-white flex items-center py-[34px] flex-col gap-[32px] max-w-[220px] rounded-[8px]"
-              >
-                <div class="p-4 bg-[#D9D4FF] rounded-[10px]">
-                  <img
-                    src="./images/icons/wiffi.svg"
-                    alt=""
-                    class="max-w-[40px]"
-                  />
-                </div>
-                <div
-                  class="spns flex flex-col items-center font-heading font-semibold text-[24px] leading-[120%] tracking-[0%] text-center"
-                >
-                  <span>High-Speed </span>
-                  <span>Wi-Fi</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+   <section class="bg-[#F8F7F4] overflow-hidden py-10 lg:py-20">
+  <div class="max-w-[1440px] mx-auto px-5 lg:px-20">
+    
+    <div class="flex flex-col items-center text-center gap-2 mb-10">
+      <h2 class="font-bold text-2xl lg:text-[48px] text-[#7C4DFF] uppercase tracking-wide">
+        Perks You’ll Enjoy
+      </h2>
+      <h3 class="font-bold text-xl lg:text-[28px] text-[#2A2734]">
+        Everything You Need, Already Included
+      </h3>
+    </div>
 
+    <div 
+      class="flex lg:grid lg:grid-cols-5 gap-3 overflow-x-auto snap-x snap-mandatory pb-4 lg:pb-0"
+      style="-ms-overflow-style: none; scrollbar-width: none; -webkit-overflow-scrolling: touch;"
+    >
+      <div class="min-w-[calc(50%-6px)] lg:min-w-0 bg-white flex flex-col items-center py-6 px-4 gap-4 rounded-[12px] shadow-sm snap-start shrink-0 border border-transparent hover:border-[#7C4DFF] transition-all duration-300">
+        <div class="p-3 bg-[#D9D4FF] rounded-[10px]">
+          <img src="./images/icons/wiffi.svg" alt="WiFi" class="w-8 h-8 lg:w-10 lg:h-10" />
+        </div>
+        <div class="text-center font-semibold text-[16px] lg:text-[20px] text-[#2A2734] leading-tight">
+          High-Speed <br> Wi-Fi
+        </div>
+      </div>
+
+      <div class="min-w-[calc(50%-6px)] lg:min-w-0 bg-white flex flex-col items-center py-6 px-4 gap-4 rounded-[12px] shadow-sm snap-start shrink-0 border border-transparent hover:border-[#7C4DFF] transition-all duration-300">
+        <div class="p-3 bg-[#D9D4FF] rounded-[10px]">
+          <img src="./images/icons/cup.svg" alt="Coffee" class="w-8 h-8 lg:w-10 lg:h-10" />
+        </div>
+        <div class="text-center font-semibold text-[16px] lg:text-[20px] text-[#2A2734] leading-tight">
+          Premium <br> Coffee & Tea
+        </div>
+      </div>
+
+      <div class="min-w-[calc(50%-6px)] lg:min-w-0 bg-white flex flex-col items-center py-6 px-4 gap-4 rounded-[12px] shadow-sm snap-start shrink-0 border border-transparent hover:border-[#7C4DFF] transition-all duration-300">
+        <div class="p-3 bg-[#D9D4FF] rounded-[10px]">
+          <img src="./images/icons/chair.svg" alt="Printing" class="w-8 h-8 lg:w-10 lg:h-10" />
+        </div>
+        <div class="text-center font-semibold text-[16px] lg:text-[20px] text-[#2A2734] leading-tight">
+          Unlimited <br> Printing
+        </div>
+      </div>
+
+      <div class="min-w-[calc(50%-6px)] lg:min-w-0 bg-white flex flex-col items-center py-6 px-4 gap-4 rounded-[12px] shadow-sm snap-start shrink-0 border border-transparent hover:border-[#7C4DFF] transition-all duration-300">
+        <div class="p-3 bg-[#D9D4FF] rounded-[10px]">
+          <img src="./images/icons//lock.svg" alt="Locker" class="w-8 h-8 lg:w-10 lg:h-10" />
+        </div>
+        <div class="text-center font-semibold text-[16px] lg:text-[20px] text-[#2A2734] leading-tight">
+          Locker & <br> Storage
+        </div>
+      </div>
+
+      <div class="min-w-[calc(50%-6px)] lg:min-w-0 bg-white flex flex-col items-center py-6 px-4 gap-4 rounded-[12px] shadow-sm snap-start shrink-0 border border-transparent hover:border-[#7C4DFF] transition-all duration-300">
+        <div class="p-3 bg-[#D9D4FF] rounded-[10px]">
+          <img src="./images/icons" alt="Events" class="w-8 h-8 lg:w-10 lg:h-10" />
+        </div>
+        <div class="text-center font-semibold text-[16px] lg:text-[20px] text-[#2A2734] leading-tight">
+          Community <br> Events
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
       <!-- Testimonials -Section -->
-      <section
-        class="relative overflow-hidden bg-[linear-gradient(90deg,_#7C4DFF_0%,_#FFF7D1_100%)] py-24 min-h-[700px] flex items-center justify-center"
-      >
-        <div
-          class="absolute inset-0 flex justify-center items-center pointer-events-none"
-        >
-          <div class="relative w-full max-w-[1440px] h-full">
-            <img
-              src="/images/icons/commas.svg"
-              alt=""
-              class="absolute top-[10%] left-[calc(50%-220px-66px-277px)] w-[277px] brightness-75 contrast-125"
-            />
-          </div>
+  <section class="relative min-h-screen flex items-center justify-center py-16 px-5 overflow-hidden bg-[linear-gradient(135deg,_#7C4DFF_0%,_#FDF6D2_100%)]">
+  
+  <div class="absolute inset-0 pointer-events-none">
+    <img 
+      src="/images/icons/commas.svg" 
+      alt="quotes" 
+      class="absolute top-[18%] left-[5%] lg:left-[12%] w-[120px] lg:w-[280px] opacity-20 brightness-200"
+    />
+  </div>
+
+  <div class="relative z-10 flex flex-col items-center w-full max-w-[1200px]">
+    
+    <h2 class="font-bold text-[40px] lg:text-[72px] uppercase text-[#FDF6D2] mb-12 tracking-tighter text-center leading-none">
+      Testimonials
+    </h2>
+
+    <div class="flex flex-row items-center justify-center w-full gap-3 lg:gap-12">
+      
+      <button class="shrink-0 w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center rounded-full bg-white/20 text-white border border-white/30 hover:bg-white/40 transition-all backdrop-blur-sm">
+        <i class="bx bx-chevron-left text-2xl lg:text-3xl"></i>
+      </button>
+
+      <div class="relative w-full max-w-[480px] bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[32px] p-8 lg:p-12 flex flex-col items-center text-center">
+        
+        <div class="mb-6">
+          <img 
+            src="./images/main-images/profileimg.png" 
+            alt="Leul Mekonen" 
+            class="w-24 h-24 lg:w-32 lg:h-32 rounded-full object-cover "
+          />
         </div>
 
-        <div class="relative z-10 flex flex-col items-center">
-          <h2
-            class="font-heading font-bold text-[48px] leading-tight uppercase text-white mb-12 tracking-wide"
-          >
-            Testimonials
-          </h2>
-
-          <div class="flex flex-row items-center gap-12">
-            <button
-              class="w-14 h-14 flex items-center justify-center rounded-full bg-white/20 text-white hover:bg-white/40 transition-all border border-white/20"
-            >
-              <i class="bx bx-chevron-left text-3xl"></i>
-            </button>
-
-            <div
-              class="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[32px] p-12 flex flex-col items-center text-center w-[440px] shadow-2xl"
-            >
-              <div class="mb-6">
-                <img
-                  src="./images/main-images/profileimg.png"
-                  alt="Leul Mekonen"
-                  class="w-[120px] rounded-full object-cover"
-                />
-              </div>
-
-              <div class="mb-6">
-                <h3 class="font-heading font-semibold text-[24px] text-white">
-                  Leul Mekonen
-                </h3>
-                <p class="text-white/70 text-[16px]">Freelancer</p>
-              </div>
-
-              <p
-                class="font-body font-normal text-white text-[16px] leading-relaxed pb-6"
-              >
-                Workora completely changed how I work. I used to bounce between
-                cafés, but now I have a space that feels like mine with better
-                coffee and zero distractions.
-              </p>
-            </div>
-
-            <button
-              class="w-14 h-14 flex items-center justify-center rounded-full bg-white/20 text-white hover:bg-white/40 transition-all border border-white/20"
-            >
-              <i class="bx bx-chevron-right text-3xl"></i>
-            </button>
-          </div>
+        <div class="mb-6">
+          <h3 class="font-bold text-2xl lg:text-3xl text-white">
+            Leul Mekonen
+          </h3>
+          <p class="text-white/70 text-base lg:text-lg">Freelancer</p>
         </div>
-      </section>
+
+        <p class="text-white text-base lg:text-[18px] leading-relaxed italic">
+          "Deskora completely changed how I work. I used to bounce between cafés, but now I have a space that feels like mine with better coffee and zero distractions."
+        </p>
+      </div>
+
+      <button class="shrink-0 w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center rounded-full bg-white/30 text-white border border-white/30 hover:bg-white/50 transition-all backdrop-blur-sm">
+        <i class="bx bx-chevron-right text-2xl lg:text-3xl"></i>
+      </button>
+
+    </div>
+  </div>
+</section>
       <!-- Blogs section -->
-      <section class="py-20 bg-white flex  justify-center">
-        <div class="max-w-[1440px] w-full">
-          <h2
-            class="font-heading font-bold text-[48px] text-[#7C4DFF] uppercase mb-12 tracking-wide"
-          >
-            Blogs
-          </h2>
+      <section class="py-12 lg:py-20 bg-white flex justify-center">
+  <div class="max-w-[1280px] w-full px-5">
+    
+    <h2 class="font-bold text-3xl lg:text-[48px] text-[#7C4DFF] uppercase mb-10 tracking-wide text-center lg:text-left">
+      Blogs
+    </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="flex flex-col group">
-              <div class="overflow-hidden rounded-sm mb-6">
-                <img
-                  src="./images/main-images/Frame 9.png"
-                  alt="Office space"
-                  class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div
-                class="flex justify-between items-center text-gray-400 text-sm mb-4"
-              >
-                <span>by Admin</span>
-                <span>July 27, 2025</span>
-              </div>
-              <h3
-                class="font-bold text-[22px] leading-tight text-[#7C4DFF] mb-4"
-              >
-                Why Coworking Works: 5 Surprising Productivity Benefits
-              </h3>
-              <p
-                class="text-gray-500 text-[15px] leading-relaxed mb-6 line-clamp-2"
-              >
-                From better focus to unexpected collaborations, coworking spaces
-                are changing how we work...
-              </p>
-              <a
-                href="#"
-                class="inline-flex items-center gap-2 border border-[#7C4DFF] text-[#7C4DFF] px-6 py-2 w-fit rounded-md font-medium hover:bg-[#7C4DFF] hover:text-white transition-colors"
-              >
-                Read More
-                <i class="bx bx-up-arrow-alt rotate-45 text-[20px]"></i>
-              </a>
-            </div>
-
-            <div class="flex flex-col group">
-              <div class="overflow-hidden rounded-sm mb-6">
-                <img
-                  src="./images/main-images/Frame 10.png"
-                  alt="Meeting table"
-                  class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div
-                class="flex justify-between items-center text-gray-400 text-sm mb-4"
-              >
-                <span>by Admin</span>
-                <span>July 27, 2025</span>
-              </div>
-              <h3
-                class="font-bold text-[22px] leading-tight text-[#7C4DFF] mb-4"
-              >
-                Designing for Focus: What Makes a Workspace Truly Inspiring?
-              </h3>
-              <p
-                class="text-gray-500 text-[15px] leading-relaxed mb-6 line-clamp-2"
-              >
-                Lighting, layout, energy there’s more to a great workspace than
-                desks and chairs. In this post...
-              </p>
-              <a
-                href="#"
-                class="inline-flex items-center gap-2 border border-[#7C4DFF] text-[#7C4DFF] px-6 py-2 w-fit rounded-md font-medium hover:bg-[#7C4DFF] hover:text-white transition-colors"
-              >
-                Read More
-                <i class="bx bx-up-arrow-alt rotate-45 text-[20px]"></i>
-              </a>
-            </div>
-
-            <div class="flex flex-col group">
-              <div class="overflow-hidden rounded-sm mb-6">
-                <img
-                  src="./images/main-images/Frame 11.png"
-                  alt="People collaborating"
-                  class="w-full h-[250px] object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div
-                class="flex justify-between items-center text-gray-400 text-sm mb-4"
-              >
-                <span>by Admin</span>
-                <span>July 27, 2025</span>
-              </div>
-              <h3
-                class="font-bold text-[22px] leading-tight text-[#7C4DFF] mb-4"
-              >
-                Membership vs. Day Pass: Which Plan Fits Your Work Style?
-              </h3>
-              <p
-                class="text-gray-500 text-[15px] leading-relaxed mb-6 line-clamp-2"
-              >
-                Whether you're a digital nomad, a growing startup, or a remote
-                worker craving community, we break...
-              </p>
-              <a
-                href="#"
-                class="inline-flex items-center gap-2 border border-[#7C4DFF] text-[#7C4DFF] px-6 py-2 w-fit rounded-md font-medium hover:bg-[#7C4DFF] hover:text-white transition-colors"
-              >
-                Read More
-                <i class="bx bx-up-arrow-alt rotate-45 text-[20px]"></i>
-              </a>
-            </div>
-          </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8">
+      
+      <div class="flex flex-col group w-full">
+        <div class="overflow-hidden rounded-[12px] mb-4 lg:mb-6 shadow-sm">
+          <img
+            src="./images/main-images/Frame 9.png"
+            alt="Office space"
+            class="w-full h-[220px] lg:h-[250px] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
         </div>
-      </section>
+        <div class="flex justify-between items-center text-gray-400 text-xs lg:text-sm mb-3">
+          <span>by Admin</span>
+          <span>July 27, 2025</span>
+        </div>
+        <h3 class="font-bold text-lg lg:text-[22px] leading-tight text-[#7C4DFF] mb-3">
+          Why Coworking Works: 5 Surprising Productivity Benefits
+        </h3>
+        <p class="text-gray-500 text-sm lg:text-[15px] leading-relaxed mb-5 line-clamp-2">
+          From better focus to unexpected collaborations, coworking spaces are changing how we work...
+        </p>
+        <a href="#" class="inline-flex items-center gap-2 border border-[#7C4DFF] text-[#7C4DFF] px-5 py-2 w-fit rounded-md font-medium text-sm hover:bg-[#7C4DFF] hover:text-white transition-all">
+          Read More
+          <i class="bx bx-up-arrow-alt rotate-45 text-[18px]"></i>
+        </a>
+      </div>
+
+      <div class="flex flex-col group w-full">
+        <div class="overflow-hidden rounded-[12px] mb-4 lg:mb-6 shadow-sm">
+          <img
+            src="./images/main-images/Frame 10.png"
+            alt="Meeting table"
+            class="w-full h-[220px] lg:h-[250px] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div class="flex justify-between items-center text-gray-400 text-xs lg:text-sm mb-3">
+          <span>by Admin</span>
+          <span>July 27, 2025</span>
+        </div>
+        <h3 class="font-bold text-lg lg:text-[22px] leading-tight text-[#7C4DFF] mb-3">
+          Designing for Focus: What Makes a Workspace Truly Inspiring?
+        </h3>
+        <p class="text-gray-500 text-sm lg:text-[15px] leading-relaxed mb-5 line-clamp-2">
+          Lighting, layout, energy there’s more to a great workspace than desks and chairs...
+        </p>
+        <a href="#" class="inline-flex items-center gap-2 border border-[#7C4DFF] text-[#7C4DFF] px-5 py-2 w-fit rounded-md font-medium text-sm hover:bg-[#7C4DFF] hover:text-white transition-all">
+          Read More
+          <i class="bx bx-up-arrow-alt rotate-45 text-[18px]"></i>
+        </a>
+      </div>
+
+      <div class="flex flex-col group w-full">
+        <div class="overflow-hidden rounded-[12px] mb-4 lg:mb-6 shadow-sm">
+          <img
+            src="./images/main-images/Frame 11.png"
+            alt="Collaboration"
+            class="w-full h-[220px] lg:h-[250px] object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+        <div class="flex justify-between items-center text-gray-400 text-xs lg:text-sm mb-3">
+          <span>by Admin</span>
+          <span>July 27, 2025</span>
+        </div>
+        <h3 class="font-bold text-lg lg:text-[22px] leading-tight text-[#7C4DFF] mb-3">
+          Membership vs. Day Pass: Which Plan Fits Your Work Style?
+        </h3>
+        <p class="text-gray-500 text-sm lg:text-[15px] leading-relaxed mb-5 line-clamp-2">
+          Whether you're a digital nomad, a growing startup, or a remote worker craving community...
+        </p>
+        <a href="#" class="inline-flex items-center gap-2 border border-[#7C4DFF] text-[#7C4DFF] px-5 py-2 w-fit rounded-md font-medium text-sm hover:bg-[#7C4DFF] hover:text-white transition-all">
+          Read More
+          <i class="bx bx-up-arrow-alt rotate-45 text-[18px]"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <!-- Ready section -->
-      <section
-        class="w-full bg-gradient-to-r from-indigo-500 via-purple-400 to-yellow-100 py-16 px-6 md:px-12 lg:px-24"
-      >
-        <div
-          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
-        >
-          <div class="text-left max-w-2xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Elevate Your Workday?
+    <section class="w-full bg-[linear-gradient(135deg,_#7C4DFF_0%,_#FDF6D2_100%)] py-12 lg:py-20 px-6">
+  <div class="max-w-[1280px] mx-auto flex flex-col items-start gap-8 lg:gap-10">
+    
+    <div class="max-w-3xl text-left">
+      <h2 class="text-white font-bold text-3xl lg:text-[48px] leading-tight mb-4 lg:mb-6">
+        Ready to Elevate Your Workday?
+      </h2>
+      <p class="text-white/90 text-base lg:text-[18px] leading-relaxed font-light">
+        Discover your next favorite place to focus, connect, and create. Whether you're freelancing solo or scaling a team, Deskora has a space just for you.
+      </p>
+    </div>
+
+    <div class="flex flex-row flex-wrap gap-4 w-full sm:w-auto">
+      <button class="bg-[#4A148C] text-white px-6 lg:px-8 py-3 lg:py-4 rounded-[12px] font-bold text-base lg:text-lg hover:bg-[#311B92] transition-all border-none">
+        Book Your Space
+      </button>
+      
+      <button class="border-2 border-[#4A148C] text-[#4A148C] px-6 lg:px-8 py-3 lg:py-4 rounded-[12px] font-bold text-base lg:text-lg hover:bg-[#4A148C] hover:text-white transition-all bg-transparent">
+        Contact US
+      </button>
+    </div>
+
+  </div>
+</section>
+      <!-- Footer -->
+      <footer class="bg-[#2d2a37] text-white py-16 px-8 md:px-20 font-sans">
+        <div class="max-w-7xl mx-auto">
+          <div class="mb-12">
+            <h2 class="text-5xl font-bold text-[#7c4dff] tracking-tight mb-2">
+              WORKORA
             </h2>
-            <p class="text-white/90 text-lg leading-relaxed">
-              Discover your next favorite place to focus, connect, and create.
-              Whether you're freelancing solo or scaling a team, Workora has a
-              space just for you.
+            <p class="text-gray-300 text-lg leading-tight max-w-xs">
+              Your space to grow, create,<br />and connect.
             </p>
           </div>
 
-          <div class="flex flex-wrap gap-4 items-center">
-            <button
-              class="border border-[#4c1d95] text-[#4c1d95] px-8 py-4 rounded-xl font-semibold hover:bg-[#4c1d95] hover:text-white transition-all"
-            >
-              Book Your Space
-            </button>
-            <button
-              class="border border-[#4c1d95] text-[#4c1d95] px-8 py-4 rounded-xl font-semibold hover:bg-[#4c1d95] hover:text-white transition-all"
-            >
-              Contact US
-            </button>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
+            <div>
+              <h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Packages</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Events</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-6">Explore</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Sign In</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Sign Up</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Book a Space</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Become a Member</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-white transition-colors"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-6">Contact Info</h3>
+              <ul class="space-y-4 text-gray-300">
+                <li class="flex items-start gap-3">
+                  <i class="bx bxs-map text-xl mt-1"></i>
+                  <span class="leading-snug"
+                    >Design Avenue Street,<br />Addis Ababa, Ethiopia</span
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="bx bxs-phone text-xl"></i>
+                  <span>251 912 345 678</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="bx bxs-envelope text-xl"></i>
+                  <span>hello@workora.com</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-6">Keep in Touch</h3>
+              <div class="flex gap-3">
+                <a
+                  href="#"
+                  class="w-8 h-8 rounded-full bg-[#d9d9d9] flex items-center justify-center text-[#2d2a37] hover:bg-white transition-all"
+                >
+                  <i class="bx bxl-linkedin text-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 rounded-full bg-[#d9d9d9] flex items-center justify-center text-[#2d2a37] hover:bg-white transition-all"
+                >
+                  <i class="bx bxl-facebook text-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 rounded-full bg-[#d9d9d9] flex items-center justify-center text-[#2d2a37] hover:bg-white transition-all"
+                >
+                  <i class="bx bxl-youtube text-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 rounded-full bg-[#d9d9d9] flex items-center justify-center text-[#2d2a37] hover:bg-white transition-all"
+                >
+                  <i class="bx bxl-instagram text-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-20 text-gray-400 text-sm">
+            © 2025 Workora. All rights reserved.
           </div>
         </div>
-      </section>
-
-      <!-- Footer -->
-        <footer class="bg-[#2d2a37] text-white py-16 px-8 md:px-20 font-sans">
-        <div class="max-w-7xl mx-auto">
-            
-            <div class="mb-12">
-                <h2 class="text-5xl font-bold text-[#7c4dff] tracking-tight mb-2">WORKORA</h2>
-                <p class="text-gray-300 text-lg leading-tight max-w-xs">
-                    Your space to grow, create,<br>and connect.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
-                
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Quick Links</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Packages</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Events</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Explore</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li><a href="#" class="hover:text-white transition-colors">Sign In</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Sign Up</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Book a Space</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Become a Member</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Contact Info</h3>
-                    <ul class="space-y-4 text-gray-300">
-                        <li class="flex items-start gap-3">
-                            <i class='bx bxs-map text-xl mt-1'></i>
-                            <span class="leading-snug">Design Avenue Street,<br>Addis Ababa, Ethiopia</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class='bx bxs-phone text-xl'></i>
-                            <span>251 912 345 678</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class='bx bxs-envelope text-xl'></i>
-                            <span>hello@workora.com</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-6">Keep in Touch</h3>
-                    <div class="flex gap-3">
-                        <a href="#" class="w-8 h-8 rounded-full bg-[#d9d9d9] flex items-center justify-center text-[#2d2a37] hover:bg-white transition-all">
-                            <i class='bx bxl-linkedin text-lg'></i>
-                        </a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-[#d9d9d9] flex items-center justify-center text-[#2d2a37] hover:bg-white transition-all">
-                            <i class='bx bxl-facebook text-lg'></i>
-                        </a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-[#d9d9d9] flex items-center justify-center text-[#2d2a37] hover:bg-white transition-all">
-                            <i class='bx bxl-youtube text-lg'></i>
-                        </a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-[#d9d9d9] flex items-center justify-center text-[#2d2a37] hover:bg-white transition-all">
-                            <i class='bx bxl-instagram text-lg'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-20 text-gray-400 text-sm">
-                © 2025 Workora. All rights reserved.
-            </div>
-        </div>
-    </footer>
+      </footer>
     </main>
   </body>
 </html>
