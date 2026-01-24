@@ -1,8 +1,9 @@
-      @keyframes custom-scroll {
-            0% { transform: translateX(0); }
-            85% { transform: translateX(calc(-50% - 8px)); } /* 85% tak scroll */
-            100% { transform: translateX(calc(-50% - 8px)); } /* 1 sec pause */
-        }
-        .animate-hero-scroll {
-            animation: custom-scroll 20s linear infinite;
-        }
+@keyframes custom-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 8px)); } 
+}
+
+.animate-hero-scroll {
+    /* linear se animation ek hi speed mein bina ruke chalta rahega */
+    animation: custom-scroll 20s linear infinite;
+}

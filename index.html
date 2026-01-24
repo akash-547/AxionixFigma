@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -15,10 +15,10 @@
     />
     <title>AxionixFigma</title>
   </head>
-  <body class="max-w-[1440px] mx-auto">
+  <body class="mx-auto">
     <!-- HEADER STYLING -->
     <header
-      class="header w-full bg-[#F8F7F4] min-h-[77px] flex items-center sticky top-0 z-50"
+      class="header w-full bg-[#F8F7F4] min-h-[77px] flex items-center sticky top-0 z-50 shadow-sm"
     >
       <nav
         class="max-w-[1440px] mx-auto w-full flex items-center justify-between px-6 py-4 lg:px-20"
@@ -35,38 +35,38 @@
           <ul
             class="flex gap-[22px] text-[#6D6D72] font-semibold leading-[150%]"
           >
-            <li>
-              <a
-                href="#"
-                class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
+            <li >
+               <a
+                href="#home"
+                class="nav-link  pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
                 >Home</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
+                href="#workspace-section"
+                class="nav-link pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
                 >Workspaces</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
+                href="#Membership"
+                class="nav-link pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
                 >Membership</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
+                href="#blog"
+                class="nav-link pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
                 >Blog</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
+                href="#favorite-workspace"
+                class="nav-link pb-2 border-b-2 border-transparent hover:border-[#7C4DFF] hover:text-[#7C4DFF] py-2 px-4 transition-all"
                 >Favorites</a
               >
             </li>
@@ -75,12 +75,12 @@
 
         <div class="h-button hidden lg:flex items-center gap-4 flex-shrink-0">
           <button
-            class="cursor-pointer text-sm font-semibold rounded-[4px]  text-[#44169C] py-2 px-6 border border-[#44169C] hover:bg-[#44169C] hover:text-white transition-all duration-300"
+            class="cursor-pointer text-sm font-semibold rounded-[4px] text-[#44169C] py-2 px-6 border border-[#44169C] hover:bg-[#44169C] hover:text-white transition-all duration-300"
           >
             Contact Us
           </button>
-        <button
-            class="cursor-pointer text-sm font-semibold rounded-[4px]  text-[#44169C] py-2 px-6 border border-[#44169C] hover:bg-[#44169C] hover:text-white transition-all duration-300"
+          <button
+            class="cursor-pointer text-sm font-semibold rounded-[4px] text-[#44169C] py-2 px-6 border border-[#44169C] hover:bg-[#44169C] hover:text-white transition-all duration-300"
           >
             LogIn
           </button>
@@ -88,34 +88,64 @@
 
         <button
           id="hamburger-btn"
-          class="lg:hidden text-3xl text-[#44169C] cursor-pointer"
+          class="lg:hidden text-3xl text-[#44169C] cursor-pointer outline-none p-1"
         >
-          <i class="bx bx-menu"></i>
+          <i class="bx bx-menu" id="menu-icon"></i>
         </button>
       </nav>
-
+<!-- MOBILE MENU -->
       <div
         id="mobile-drawer"
-        class="hidden absolute top-[77px] left-0 w-full bg-[#F8F7F4] lg:hidden flex flex-col p-6 gap-6 border-t border-gray-200"
+        class="hidden absolute top-[77px] left-0 w-full bg-[#F8F7F4] lg:hidden flex flex-col p-6 gap-6 border-t border-gray-200 shadow-xl z-50"
       >
         <ul
           class="flex flex-col gap-2 text-[#6D6D72] font-semibold leading-[150%]"
         >
-          <li><a href="#" class="text-[#7C4DFF] block">Home</a></li>
-          <li><a href="#" class="block">Workspaces</a></li>
-          <li><a href="#" class="block">Membership</a></li>
-          <li><a href="#" class="block">Blog</a></li>
-          <li><a href="#" class="block">Favorites</a></li>
+          <li>
+            <a
+              href="#home"
+              class="mobile-link hover:text-[#7C4DFF]  block py-2 active:bg-gray-100 px-2 rounded"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#workspace-section"
+              class="mobile-link block py-2 hover:text-[#7C4DFF] px-2"
+              >Workspaces</a
+            >
+          </li>
+          <li>
+            <a
+              href="#Membership"
+              class="mobile-link block py-2 hover:text-[#7C4DFF] px-2"
+              >Membership</a
+            >
+          </li>
+          <li>
+            <a
+              href="#blog"
+              class="mobile-link block py-2 hover:text-[#7C4DFF] px-2"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#favorite-workspace"
+              class="mobile-link block py-2 hover:text-[#7C4DFF] px-2"
+              >Favorites</a
+            >
+          </li>
         </ul>
 
-        <div class="flex flex-col gap-3 w-full box-border">
-          <button
-            class="w-full border border-[#44169C] text-[#44169C] py-3 rounded-[4px] font-semibold text-sm"
-          >
-            Contact Us
-          </button>
-          <button
-            class="w-full bg-[#44169C] text-white py-3 rounded-[4px] font-semibold text-sm"
+        <div class="flex flex-col gap-3 w-full">
+            <button
+              class="w-full border border-[#44169C] text-[#44169C] py-3 rounded-[4px] font-semibold text-sm hover:bg-[#44169C] hover:text-white transition-all duration-300 cursor-pointer"
+            >
+              Contact Us
+            </button>
+           <button
+            class="w-full border border-[#44169C] text-[#44169C] py-3 rounded-[4px] font-semibold text-sm hover:bg-[#44169C] hover:text-white transition-all duration-300 cursor-pointer"
           >
             LogIn
           </button>
@@ -127,7 +157,7 @@
       <!-- HERO-SECTION STYLING -->
 
       <section
-        id="hero-section"
+        id="home"
         class="w-full py-16 px-4 md:py-20 md:px-20 overflow-hidden"
       >
         <div
@@ -160,7 +190,7 @@
           <div
             class="flex flex-row items-center justify-center gap-3 md:gap-4 w-full px-2"
           >
-             <button
+            <button
               class="flex-1 sm:flex-none cursor-pointer text-[13px] md:text-sm font-semibold rounded-[4px] bg-transparent text-[#44169C] py-3 px-4 md:px-10 border border-[#44169C] hover:bg-[#44169C] hover:text-white transition-all duration-300"
             >
               Explore Spaces
@@ -227,6 +257,7 @@
       <!-- EXPERINCE SECTION -->
 
       <section
+        id="workspace-section"
         class="EXPERINCE-SECTION w-full bg-[#7C4DFF] py-16 px-6 md:py-20 md:px-12 lg:px-24"
       >
         <div
@@ -340,7 +371,7 @@
         </div>
       </section>
       <!-- WORKSPACE SECTION -->
-      <section id="workspace-section" class="w-full bg-[#F8F7F4]">
+      <section id="favorite-workspace" class="w-full bg-[#F8F7F4]">
         <div
           class="work-mainContainer px-6 py-12 lg:px-20 lg:py-20 max-w-[1440px] mx-auto"
         >
@@ -1008,9 +1039,7 @@
                 <p class="text-white/70 text-base lg:text-lg">Freelancer</p>
               </div>
 
-              <p
-                class="text-white text-base lg:text-[18px] leading-relaxed "
-              >
+              <p class="text-white text-base lg:text-[18px] leading-relaxed">
                 "Deskora completely changed how I work. I used to bounce between
                 cafés, but now I have a space that feels like mine with better
                 coffee and zero distractions."
@@ -1026,7 +1055,7 @@
         </div>
       </section>
       <!-- Blogs section -->
-      <section class="py-12 lg:py-20 bg-white flex justify-center">
+      <section id="blog" class="py-12 lg:py-20 bg-white flex justify-center">
         <div class="max-w-[1280px] w-full px-5">
           <h2
             class="font-bold text-3xl lg:text-[48px] text-[#7C4DFF] uppercase mb-10 tracking-wide text-center lg:text-left"
@@ -1064,7 +1093,7 @@
                 From better focus to unexpected collaborations, coworking spaces
                 are changing how we work...
               </p>
-                  <a
+              <a
                 href="#"
                 class="inline-flex items-center gap-2 border border-[#44169C] text-[#44169C] px-5 py-2 w-fit rounded-md font-medium text-sm hover:bg-[#44169C] hover:text-white transition-all"
               >
@@ -1136,7 +1165,7 @@
                 Whether you're a digital nomad, a growing startup, or a remote
                 worker craving community...
               </p>
-                   <a
+              <a
                 href="#"
                 class="inline-flex items-center gap-2 border border-[#44169C] text-[#44169C] px-5 py-2 w-fit rounded-md font-medium text-sm hover:bg-[#44169C] hover:text-white transition-all"
               >
@@ -1172,13 +1201,13 @@
 
           <div class="flex flex-row flex-wrap gap-4 w-full sm:w-auto">
             <button
-              class="border-1 border-[#44169C] text-[#44169C] px-6 lg:px-8 py-3 lg:py-4 rounded-[12px] font-semibold text-base lg:text-lg hover:bg-[#44169C] hover:text-white transition-all "
+              class="border-1 border-[#44169C] text-[#44169C] px-6 lg:px-8 py-3 lg:py-4 rounded-[12px] font-semibold text-base lg:text-lg hover:bg-[#44169C] hover:text-white transition-all"
             >
               Book Your Space
             </button>
 
             <button
-              class="border-1 border-[#44169C] text-[#44169C] px-6 lg:px-8 py-3 lg:py-4 rounded-[12px] font-semibold text-base lg:text-lg hover:bg-[#44169C] hover:text-white transition-all "
+              class="border-1 border-[#44169C] text-[#44169C] px-6 lg:px-8 py-3 lg:py-4 rounded-[12px] font-semibold text-base lg:text-lg hover:bg-[#44169C] hover:text-white transition-all"
             >
               Contact US
             </button>
@@ -1344,5 +1373,6 @@
         </div>
       </footer>
     </main>
+    <script src="./main/script.js"></script>
   </body>
 </html>
